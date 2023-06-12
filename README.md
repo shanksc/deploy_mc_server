@@ -28,7 +28,7 @@ aws_session_token={AWS_SESSION_TOKEN}
 
 ## Pipeline Overview
 
-
+![plot](diagram.png)
 
 
 
