@@ -1,6 +1,4 @@
-while STATE=$(aws ec2 describe-instances --instance-ids $2 --output text --query 'Reservations[*].Instances[*].State.Name'); test "$STATE" != "running"; do
-    sleep 1;
-done;
+aws ec2 wait instance-running --instance-ids $2
 
 READY=false
 until $READY; do
