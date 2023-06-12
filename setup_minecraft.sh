@@ -1,6 +1,6 @@
 #! /bin/bash
 echo "########## connecting to ubuntu@$1 and setting up minecraft directory ###########"
-ssh -i  linux-key-pair.pem  ubuntu@$1 '
+ssh -i  ubuntu-key-pair.pem  ubuntu@$1 '
     sudo apt -y update
     sudo apt-get install openjdk-17-jre
     sudo mkdir /usr/local/minecraft/
@@ -12,8 +12,8 @@ ssh -i  linux-key-pair.pem  ubuntu@$1 '
 echo "########## minecraft directory setup complete ##########"
 
 echo "########## setting up service for automatic server startup ##########"
-scp -i linux-key-pair.pem  start_server.service ubuntu@$1:/etc/systemd/system/
-ssh -i linux-key-pair.pem ubuntu@$1 'sudo chmod 664 /etc/systemd/system/start_server.service
+scp -i ubuntu-key-pair.pem  start_server.service ubuntu@$1:/etc/systemd/system/
+ssh -i ubuntu-key-pair.pem ubuntu@$1 'sudo chmod 664 /etc/systemd/system/start_server.service
     sudo systemctl enable start_server.service
     #precautionary incase ubuntu firewall blocks mc server port 
     sudo ufw allow 25565

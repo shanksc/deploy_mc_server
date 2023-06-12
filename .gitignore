@@ -1,3 +1,7 @@
+.terraform.lock.hcl
+ip_addr.txt
+linux-key-pair.pem
+
 # Local .terraform directories
 **/.terraform/*
 
