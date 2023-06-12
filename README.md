@@ -36,7 +36,10 @@ aws_session_token={AWS_SESSION_TOKEN}
 ## Sources
 
 https://github.com/KopiCloud/terraform-aws-ubuntu-ec2-instance for generating key pair and saving locally using Terraform.
+
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance for specifying Ubuntu AMI. 
+
 https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-outputs for using outputs in scripts. 
+
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group for configuring security groups. 
 
