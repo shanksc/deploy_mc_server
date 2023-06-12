@@ -1,0 +1,12 @@
+Unit]
+Description=Startup Minecraft server
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/local/minecraft/
+RemainAfterExit=yes
+ExecStart=java -Xmx1024M -Xms1024M -jar server.jar nogui
+
+[Install]
+WantedBy=multi-user.target
