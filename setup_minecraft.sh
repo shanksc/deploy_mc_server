@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 echo "########## connecting to ubuntu@$1 and setting up minecraft directory ###########"
 ssh -i  ubuntu-key-pair.pem  ubuntu@$1 '
     sudo apt -y update
