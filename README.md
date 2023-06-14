@@ -25,7 +25,8 @@ aws_session_token={AWS_SESSION_TOKEN}
 1. Download this repository.
 2. Run ``bash run_setup.sh``. This runs provisions the EC2 instance and enables the service that runs the server. 
 3. Look at the contents of ``ip_addr.txt`` to get the public ipv4. This is the ip address for connecting to the server in Minecraft. 
-4. Manage the ``start_server.service`` using the ``systemctl`` command. The service will automatically startup the server when the instance launches. 
+4. Manage the ``start_server.service`` using the ``systemctl`` command. The service will automatically startup the server when the instance launches.
+5. You can modify the ``main.tf`` and ``start_server.service`` to change what EC2 instance is used and what parameters are passed to the minecraft server, respectively. 
 
 ## Pipeline Overview
 
