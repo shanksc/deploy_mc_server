@@ -2,7 +2,7 @@
 echo "########## connecting to ubuntu@$1 and setting up minecraft directory ###########"
 ssh -i  ubuntu-key-pair.pem  ubuntu@$1 '
     sudo apt -y update
-    sudo apt-get install openjdk-17-jre
+    sudo apt -y install openjdk-17-jre-headless
     sudo mkdir /usr/local/minecraft/
     sudo wget -O /usr/local/minecraft/server.jar https://piston-data.mojang.com/v1/objects/15c777e2cfe0556eef19aab534b186c0c6f277e1/server.jar
     sudo chown ubuntu /usr/local/minecraft/
