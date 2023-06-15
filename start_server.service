@@ -1,4 +1,4 @@
-Unit]
+[Unit]
 Description=Startup Minecraft server
 After=network-online.target
 
