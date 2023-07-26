@@ -28,10 +28,6 @@ aws_session_token={AWS_SESSION_TOKEN}
 4. Manage the ``start_server.service`` using the ``systemctl`` command. The service will automatically startup the server when the instance launches.
 5. You can modify the ``main.tf`` and ``start_server.service`` to change what EC2 instance is used and what parameters are passed to the minecraft server, respectively. 
 
-## Pipeline Overview
-
-![plot](diagram.png)
-
 
 
 
